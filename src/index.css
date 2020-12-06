@@ -13,3 +13,31 @@ input {
     font-size: 1.2rem;
     width: 100%;
 }
+
+.GifGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.GifGridItem {
+    align-content: center;
+    border: 1px solid green;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.GifGridItem p{
+    padding: 5px;
+    text-align: center;
+}
+
+.GifGridItem img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 170px;
+}

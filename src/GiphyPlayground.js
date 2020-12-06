@@ -3,13 +3,12 @@ import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
 export const GiphyPlayground = () => {
-  const [categories, setCategories] = useState(["Samurai X"])
+  const [categories, setCategories] = useState([])
   
   return (
     <div>
       <h1>Giphy Playground</h1>
       <AddCategory setCategories = { setCategories }/>
-      <hr />
       <div>
         {
           categories.map(( category ) => (
