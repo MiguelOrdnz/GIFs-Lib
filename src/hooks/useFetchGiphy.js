@@ -8,8 +8,7 @@ export const useFetchGiphy = (category) => {
         loading: true
     })
 
-    useEffect((category) => {
-        return (
+    useEffect(() => {
             getGifs(category)
                 .then((imgs) => {
                     setData( {
@@ -17,7 +16,6 @@ export const useFetchGiphy = (category) => {
                         loading: false
                     })
                 })
-        )
     }, [category])
     
     return data
