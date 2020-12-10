@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import React from "react";
 import { HooksPlayground } from "./components/hooksPlayground/HooksPlayground";
+import { GiphyPg } from './components/GiphyPg'
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,29 +8,25 @@ import {
   Link
 } from 'react-router-dom'
 
-export const GiphyPlayground = () => {
-  const [categories, setCategories] = useState([])
-  
+export const GiphyPlayground = () => {  
   return (
     <Router>
       <div>
-        <h1>Giphy Playground</h1>
-        <Link to="/hooksPlayground">hooksPlayground</Link>
-        <AddCategory setCategories = { setCategories }/>
-        <div>
-          {
-            categories.map(( category ) => (
-                <GifGrid 
-                  key={ category }
-                  category={ category }/>
-              )
-            )
-          }
-        </div>
+        <ul>
+          <li>
+            <Link to="/hooksPlayground">hooksPlayground</Link>
+          </li>
+          <li>
+            <Link to="/GiphyPlayground">GiphyPlayground</Link>
+          </li>            
+        </ul>
       </div>
       <Switch>
         <Route path="/hooksPlayground">
           <HooksPlayground />
+        </Route>
+        <Route path="/GiphyPlayground">
+          <GiphyPg />
         </Route>
       </Switch>
     </Router>
