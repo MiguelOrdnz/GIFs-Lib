@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testint <GifGridItem />> Match Snapshot 1`] = `
+<div
+  className="GifGridItem animate__animated animate__fadeIn animate__delay-1s"
+>
+  <img
+    alt=""
+    id=""
+    src=""
+  />
+  <p />
+</div>
+`;
