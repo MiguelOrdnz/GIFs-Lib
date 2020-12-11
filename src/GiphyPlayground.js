@@ -1,5 +1,5 @@
 import React from "react";
-import { HooksPlayground } from "./components/hooksPlayground/HooksPlayground";
+import { HooksPlayground } from "./hooksPlayground/HooksPlayground";
 import { GiphyPg } from './components/GiphyPg'
 import {
   BrowserRouter as Router,
@@ -7,6 +7,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import { BreakingBadAPI } from "./breaking_bad_api/BreakingBadAPI";
 
 export const GiphyPlayground = () => {  
   return (
@@ -18,7 +19,10 @@ export const GiphyPlayground = () => {
           </li>
           <li>
             <Link to="/GiphyPlayground">GiphyPlayground</Link>
-          </li>            
+          </li>
+          <li>
+            <Link to="/BreakingBad">Breakign Bad API</Link>
+          </li>
         </ul>
       </div>
       <Switch>
@@ -27,6 +31,9 @@ export const GiphyPlayground = () => {
         </Route>
         <Route path="/GiphyPlayground">
           <GiphyPg />
+        </Route>
+        <Route path='/BreakingBad'>
+          <BreakingBadAPI />
         </Route>
       </Switch>
     </Router>
