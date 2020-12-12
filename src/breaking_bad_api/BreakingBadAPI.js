@@ -26,7 +26,6 @@ export const BreakingBadAPI = () => {
                     </blockquote>   
                 )
             }
-
             <button className="btn btn-primary mt-2" onClick={increase}>
                 Next
             </button>
