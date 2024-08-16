@@ -7,7 +7,7 @@ export const GiphyPlayground = () => {
   
   return (
     <div>
-      <h1>Giphy Playground</h1>
+      <h1>GIFs Library</h1>
       <AddCategory setCategories = { setCategories }/>
       <div>
         {
